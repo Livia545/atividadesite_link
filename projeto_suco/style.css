@@ -1,0 +1,184 @@
+/* Animações 👇 */
+
+@keyframes mexer {
+    from {
+        top: 100%;
+        opacity: 0;
+    }
+}
+
+@keyframes entrar {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes sair {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+}
+/* fim das animações ☝️ */
+
+/* Fonte caso queira, pode usar a sua do seu site 👇 */
+@import url('https://fonts.googleapis.com/css2?family=Georgia:wght@400;700&display=swap');
+* {
+    font-family: "Georgia";
+}
+
+/* inicio da parte do site 👇 */
+.item {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background-color: var(--background);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.item.ativo {
+    opacity: 1;
+    animation: entrar 0.5s forwards;
+}
+
+.item.sair {
+    animation: sair 0.5s forwards;
+}
+
+.item {
+    display: none;
+}
+
+.item.ativo {
+    display: block;
+}
+
+.item .titulo {
+    font-size: 1rem;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    margin-top: 40px;
+    line-height: 1.5;
+}
+
+.item .titulo {
+    animation: mexer 0.5s ease-in-out;
+}
+
+.item .livro {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    height: 450px;
+    width: auto;
+    margin-top: 40px;
+}
+
+h1 {
+    margin-top: 10px;
+    font-size: 3em;
+    text-align: center;
+    /* cor do TITULO 👇 */
+    color: #a50707;
+    /* cor da borda do titulo 👇 */
+    text-shadow: 2px 2px 0px #fff,
+        -2px -2px 0px #fff,
+        2px -2px 0px #fff,
+        -2px 2px 0px #fff;
+}
+
+.item.ativo img.livro {
+    animation: mexer 0.7s ease-in-out;
+}
+
+#anterior,
+#proximo {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.304);
+    border: 1px solid #eee9;
+    color: #eee;
+    font-size: x-large;
+    font-family: monospace;
+    cursor: pointer;
+    z-index: 4;
+    border-radius: 50%;
+}
+
+#anterior {
+    left: 30px;
+}
+
+#proximo {
+    right: 30px;
+}
+
+@media (min-width: 300px) and (max-width: 480px) {
+    .item.ativo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    h1 {
+        font-size: 2em;
+        padding: 20px;
+    }
+
+    .item img.livro {
+        position: absolute;
+        margin-top: -150px;
+        left: 50%;
+        height: 400px;
+    }
+
+    .item .titulo {
+        position: relative;
+        margin-top: 600px;
+        width: 100%;
+        margin-right: 40%;
+    }
+}
+
+@media (max-width: 768px) {
+    .item .livro {
+        position: absolute;
+        top: 49%;
+        height: 400px;
+        width: auto;
+        padding: 40px;
+    }
+
+    .item .titulo {
+        font-size: 1.2em;
+        margin-left: 30px;
+    }
+}

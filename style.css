@@ -1,0 +1,118 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Georgia:wght@400;700&display=swap');
+
+body {
+    background: url('crepusculo1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Georgia', serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #600000;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.personagens, .livro, .volumes, .autora {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    width: 80%;
+    text-align: center;
+}
+
+h2 {
+    color: #d4af37;
+    color: #d4af37;
+    color: #d4af37;
+    color: #d4af37;
+    color: #d4af37;
+}
+
+.personagem {
+    display: inline-block;
+    margin: 10px;
+}
+
+.personagem img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.livro img {
+    width: 150px;
+    height: auto;
+}
+
+.descricao {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+button {
+    background-color: #d4af37;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    color: black;
+}
+
+button:hover {
+    background-color: #b0902e;
+
+}
+
+.volumes ul {
+    list-style: none;
+    padding: 0;
+}
+
+.volumes li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.volumes img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.autora img {
+    width: 120px;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #600000;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+.volumes a{
+    height: 60px;
+    width: 100px;
+    background-color: white;
+}
