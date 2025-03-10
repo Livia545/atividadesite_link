@@ -12,3 +12,6 @@ Animações: Utilização de animações em transições de elementos da página
 Interatividade: Algumas funcionalidades interativas foram implementadas, como modificação de conteúdo com base nas interações do usuário (por exemplo, clique em um botão para exibir informações adicionais).
 Informações sobre o Livro: O site oferece uma breve descrição do livro Crepúsculo, informações sobre os principais personagens e links para a compra ou leitura.
 Imagens Temáticas: Uso de imagens do livro e da adaptação cinematográfica para criar um ambiente visual imersivo.
+
+FIGMA:
+https://www.figma.com/design/jFP7oYzOM13rNQBSWA2Q19/Untitled?t=N35IWI61Pg9ANJj8-0
